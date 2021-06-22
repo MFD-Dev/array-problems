@@ -5,6 +5,17 @@
 // into a string.
 // Example array: var my Color=["Red", "Green", "White", "Black"];
 
+
+/*
+-- create a new variable
+-- join each word 
+
+*/
 var myColor=["Red", "Green", "White", "Black"];
 
-console.log(myColor.toString());
+var newString = myColor.join(); // join into a string comma separated.
+// var newString = myColor.join('');    // join into a string with no separation.
+// var newString = myColor.join('').toLowerCase(); 
+
+console.log(newString)
+// console.log(newString.toString());
