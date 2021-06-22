@@ -9,13 +9,18 @@ Example: If I pass in an array and the number 2, your function returns the first
 
 /*
 -- create a array variable
--- create a function
--- return the function
+-- create a function that loops through the array.
+-- return the function and grab the first 2 indexes.
 
 */
 let array = [2, 4, 7, 9]
-myFunction (arr, n) {
-    for (var i = 0; i < array.length; i++);
-    return array[0,1]
+
+function myFunction(arr, n) {
+    for (var i = 0; i < array.length; i++) {  // loop through the array.  incrementing by 1.
+          return array.slice(0, 2) //use slice to grab the first 2 indexes
+    }
+  
     
 }
+
+console.log(myFunction(array))
